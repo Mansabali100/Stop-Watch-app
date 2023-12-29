@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+body{
+    background: url(https://images.unsplash.com/photo-1592134212762-51ee580cd38a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    object-fit: cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-section{
+    background: transparent;
+    max-width: 600px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
 }
+.clock-holder{
+    width: 100%;
+    background:transparent;
+    margin: 30px auto;
+    position: relative;
+    margin-top: 200px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.stop-watch{
+    padding: 60px 0px;
+    text-align: center;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stop-watch span {
+    background-color: #00ABA9;
+    color: white;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 22px;
+    padding: 20px;
+    width: 70px;
+    border-radius: 5px;
+}
+.stop-watch .stopwatch-btn{
+    background: #fff;
+    margin-top: 30px;
+    margin-left: 5px;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 150px;
+    transition: background 1s;
+    cursor: pointer;
+}
+.stop-watch .stopwatch-btn-red{
+    border: 2px solid red;
+    color: black;
+}
+.stop-watch .stopwatch-btn-yel{
+    border: 2px solid yellow;
+    color: black;
+}
+.stop-watch .stopwatch-btn-gre{
+    border: 2px solid green;
+    color: black;
+}
+.stop-watch .stopwatch-btn-red:hover{
+    background: black;
+    color: white;
+    border: 2px solid red;
+}
+.stop-watch .stopwatch-btn-yel:hover{
+    background: red;
+    color: white;
+    border: 2px solid yellow;
+}
+.stop-watch .stopwatch-btn-gre:hover{
+    background: yellow;
+    color: green;
+    border: 2px solid green;
 }
